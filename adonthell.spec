@@ -2,7 +2,7 @@ Summary:	A 2D graphical RPG game
 Summary(pl):	Darmowa gra RPG z graficznym interfejsem
 Name:		adonthell
 Version:	0.3.3
-Release:	2
+Release:	3
 License:	GPL
 Source0:	http://savannah.nongnu.org/download/adonthell/src/%{name}-%{version}.tar.gz
 # Source0-md5:	8ed4a8b02ea24fd393b67bca355cc70b
@@ -31,6 +31,8 @@ gry jest dostêpna ma³a plansza (Waste's Edge).
 %patch0 -p1
 
 %build
+cp -f /usr/share/automake/config.sub .
+
 %configure2_13 \
 	--disable-py-debug
 
