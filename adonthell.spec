@@ -5,8 +5,6 @@ Version:	0.3.3
 Release:	1
 License:	GPL
 Source0:	http://savannah.nongnu.org/download/adonthell/src/%{name}-%{version}.tar.gz
-Source1:	http://savannah.nongnu.org/download/adonthell/src/wastesedge-0.3.3.tar.gz
-#Patch0:		%{name}-lib.patch
 URL:		http://adonthell.linuxgames.com
 Group:		X11/Applications/Games
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -29,7 +27,6 @@ gry jest dostêpna ma³a plansza(Waste's Edge).
 
 %prep
 %setup -q
-#%patch -p0
 
 %build
 %configure2_13
@@ -49,7 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_prefix}/%{_gamedatadir}/modules/adonthell.py
+%{_prefix}/%{_gamedatadir}/modules/*
 %{_prefix}/%{_gamedatadir}/games
 %attr(755,root,root)%{_bindir}/adonthell
 %doc ChangeLog NEWBIE README.* AUTHORS COPYING NEWS
