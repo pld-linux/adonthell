@@ -2,15 +2,19 @@ Summary:	A 2D graphical RPG game
 Summary(pl):	Darmowa gra RPG z graficznym interfejsem
 Name:		adonthell
 Version:	0.3.3
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://savannah.nongnu.org/download/adonthell/src/%{name}-%{version}.tar.gz
 # Source0-md5:	8ed4a8b02ea24fd393b67bca355cc70b
 Patch0:		%{name}-etc_dir.patch
 URL:		http://adonthell.linuxgames.com/
-BuildRequires:	SDL-devel
+BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	automake
+BuildRequires:	libvorbis-devel
+BuildRequires:	python
+BuildRequires:	python-devel
+BuildRequires:	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_gamedatadir	%{_datadir}/%{name}
