@@ -24,7 +24,7 @@ a small demo game (Waste's Edge) is available.
 Adonthell jest ci±gle rozwijan± gr± RPG której celem jest po³±czenie
 najlepszych cech takich serii jak Final Fantasy i Ultima. Akcja gry
 toczy siê w szczegó³owym, wirtualnym ¶wiecie. Razem z obecnym engine
-gry jest dostêpna ma³a plansza(Waste's Edge).
+gry jest dostêpna ma³a plansza (Waste's Edge).
 
 %prep
 %setup -q
@@ -36,13 +36,16 @@ gry jest dostêpna ma³a plansza(Waste's Edge).
 
 %{__make}
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_prefix}/%{_gamedatadir}/{modules,games},%{_bindir},adonthell-wastesedge}
+
 cp src/modules/adonthell.py $RPM_BUILD_ROOT%{_prefix}/%{_gamedatadir}/modules/adonthell.py
 
-%{__make} prefix=$RPM_BUILD_ROOT%{_prefix} bindir=$RPM_BUILD_ROOT%{_bindir} gamedatadir=$RPM_BUILD_ROOT%{_prefix}/%{_gamedatadir} install
+%{__make} install \
+	prefix=$RPM_BUILD_ROOT%{_prefix} \
+	bindir=$RPM_BUILD_ROOT%{_bindir} \
+	gamedatadir=$RPM_BUILD_ROOT%{_prefix}/%{_gamedatadir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -52,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog NEWBIE README.* AUTHORS NEWS
 %{_prefix}/%{_gamedatadir}/modules/*
 %{_prefix}/%{_gamedatadir}/games
-%attr(755,root,root)%{_bindir}/adonthell
+%attr(755,root,root) %{_bindir}/adonthell
