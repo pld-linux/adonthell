@@ -7,9 +7,9 @@ License:	GPL
 Source0:	http://savannah.nongnu.org/download/adonthell/src/%{name}-%{version}.tar.gz
 URL:		http://adonthell.linuxgames.com
 Group:		X11/Applications/Games
+BuildRequires:	SDL-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_bindir		%{_prefix}/bin/
 %define		_gamedatadir	share/%{name}
 
 %description
