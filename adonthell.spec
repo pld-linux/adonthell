@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc ChangeLog NEWBIE README.* AUTHORS NEWS
 %{_prefix}/%{_gamedatadir}/modules/*
 %{_prefix}/%{_gamedatadir}/games
 %attr(755,root,root)%{_bindir}/adonthell
-%doc ChangeLog NEWBIE README.* AUTHORS COPYING NEWS
