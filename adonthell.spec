@@ -9,7 +9,6 @@ URL:		http://adonthell.linuxgames.com
 Group:		X11/Applications/Games
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define 	_prefix		/usr/X11R6
 %define		_bindir		%{_prefix}/bin/
 %define		_gamedatadir	share/%{name}
 
