@@ -2,7 +2,7 @@ Summary:	A 2D graphical RPG game
 Summary(pl):	Darmowa gra RPG z graficznym interfejsem
 Name:		adonthell
 Version:	0.3.3
-Release:	5
+Release:	6
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://savannah.nongnu.org/download/adonthell/src/%{name}-%{version}.tar.gz
