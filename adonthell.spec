@@ -5,6 +5,7 @@ Version:	0.3.3
 Release:	2
 License:	GPL
 Source0:	http://savannah.nongnu.org/download/adonthell/src/%{name}-%{version}.tar.gz
+# Source0-md5:	8ed4a8b02ea24fd393b67bca355cc70b
 Patch0:   %{name}-etc_dir.patch
 URL:		http://adonthell.linuxgames.com
 Group:		X11/Applications/Games
