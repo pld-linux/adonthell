@@ -23,8 +23,9 @@ a small demo game (Waste's Edge) is available.
 
 %description -l pl
 Adonthell jest ci±gle rozwijan± gr± RPG której celem jest po³±czenie
-najlepszych cech takich serii jak Final Fantasy i Ultima. (niech kto¶
-przet³umaczy resztê bo ja siê bojê;)
+najlepszych cech takich serii jak Final Fantasy i Ultima. Akcja gry
+toczy siê w szczegó³owym, wirtualnym ¶wiecie. Razem z obecnym engine
+gry jest dostêpna ma³a plansza(Waste's Edge).
 
 %prep
 %setup -q
