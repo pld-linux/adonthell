@@ -2,9 +2,10 @@ Summary:	A 2D graphical RPG game
 Summary(pl):	Darmowa gra RPG z graficznym interfejsem
 Name:		adonthell
 Version:	0.3.3
-Release:	1
+Release:	2
 License:	GPL
 Source0:	http://savannah.nongnu.org/download/adonthell/src/%{name}-%{version}.tar.gz
+Patch0:   %{name}-home_etc.patch
 URL:		http://adonthell.linuxgames.com
 Group:		X11/Applications/Games
 BuildRequires:	SDL-devel
@@ -26,6 +27,7 @@ gry jest dostêpna ma³a plansza(Waste's Edge).
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure2_13 \
