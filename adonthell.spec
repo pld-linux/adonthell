@@ -43,7 +43,6 @@ install -d $RPM_BUILD_ROOT{%{_prefix}/%{_gamedatadir}/{modules,games},%{_bindir}
 cp src/adonthell.py $RPM_BUILD_ROOT%{_prefix}/%{_gamedatadir}/modules/adonthell.py
 
 %{__make} prefix=$RPM_BUILD_ROOT%{_prefix} bindir=$RPM_BUILD_ROOT%{_bindir} gamedatadir=$RPM_BUILD_ROOT%{_prefix}/%{_gamedatadir} install
-gzip -9nf ChangeLog NEWBIE README.* AUTHORS COPYING NEWS
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -53,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_prefix}/%{_gamedatadir}/modules/adonthell.py
 %{_prefix}/%{_gamedatadir}/games
 %attr(755,root,root)%{_bindir}/adonthell
-%doc *.gz
+%doc ChangeLog NEWBIE README.* AUTHORS COPYING NEWS
