@@ -45,8 +45,6 @@ gry jest dostêpna ma³a plansza (Waste's Edge).
 %patch1 -p1
 %endif
 :> acinclude.m4
-# ugly workaround for a buggy libtool
-sed -i 's/-Wl,-E/-Wl,-Xlinker,-E/' configure.in
 
 %build
 %{__gettextize}
