@@ -1,0 +1,11 @@
+--- adonthell-0.3.3/configure.in.orig	2004-12-23 13:46:45.723942752 +0000
++++ adonthell-0.3.3/configure.in	2004-12-23 13:47:17.212155816 +0000
+@@ -184,7 +184,7 @@
+    PYLIBVER=`$PYPACKAGE -c 'import sys; print sys.version[:3]'`
+    changequote([, ])
+ 
+-   py_paths="$PYPREFIX/lib/python$PYLIBVER/config $PYPREFIX/lib"
++   py_paths="$PYPREFIX/lib64/python$PYLIBVER/config $PYPREFIX/lib64"
+    py_suffix="$PYLIBVER.so $PYLIBVER.a .so .a"
+    
+    dnl Try for specific version first, then the generic version, then panic
