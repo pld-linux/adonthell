@@ -1,12 +1,12 @@
 Summary:	A 2D graphical RPG game
 Summary(pl):	Darmowa gra RPG z graficznym interfejsem
 Name:		adonthell
-Version:	0.3.2
+Version:	0.3.3
 Release:	1
 License:	GPL
-Source0:	http://freesoftware.fsf.org/download/adonthell/%{name}-%{version}.tar.gz
-Source1:	http://freesoftware.fsf.org/download/adonthell/wastesedge-0.3.1.tar.gz
-Patch0:		%{name}-lib.patch
+Source0:	http://savannah.nongnu.org/download/adonthell/src/%{name}-%{version}.tar.gz
+Source1:	http://savannah.nongnu.org/download/adonthell/src/wastesedge-0.3.3.tar.gz
+#Patch0:		%{name}-lib.patch
 URL:		http://adonthell.linuxgames.com
 Group:		X11/Applications/Games
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -29,7 +29,7 @@ gry jest dostêpna ma³a plansza(Waste's Edge).
 
 %prep
 %setup -q
-%patch -p0
+#%patch -p0
 
 %build
 %configure2_13
@@ -40,7 +40,7 @@ gry jest dostêpna ma³a plansza(Waste's Edge).
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_prefix}/%{_gamedatadir}/{modules,games},%{_bindir},adonthell-wastesedge}
-cp src/adonthell.py $RPM_BUILD_ROOT%{_prefix}/%{_gamedatadir}/modules/adonthell.py
+cp src/modules/adonthell.py $RPM_BUILD_ROOT%{_prefix}/%{_gamedatadir}/modules/adonthell.py
 
 %{__make} prefix=$RPM_BUILD_ROOT%{_prefix} bindir=$RPM_BUILD_ROOT%{_bindir} gamedatadir=$RPM_BUILD_ROOT%{_prefix}/%{_gamedatadir} install
 
