@@ -28,7 +28,8 @@ gry jest dostêpna ma³a plansza(Waste's Edge).
 %setup -q
 
 %build
-%configure2_13
+%configure2_13 \
+	--disable-py-debug
 
 %{__make}
 
