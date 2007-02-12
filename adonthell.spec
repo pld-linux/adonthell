@@ -1,5 +1,5 @@
 Summary:	A 2D graphical RPG game
-Summary(pl):	Darmowa gra RPG z graficznym interfejsem
+Summary(pl.UTF-8):   Darmowa gra RPG z graficznym interfejsem
 Name:		adonthell
 Version:	0.3.3
 Release:	6
@@ -32,11 +32,11 @@ the best features of the Final Fantasy and Ultima series with an epic
 plot. It is set in a detailed virtual world. With the current engine,
 a small demo game (Waste's Edge) is available.
 
-%description -l pl
-Adonthell jest ci±gle rozwijan± gr± RPG której celem jest po³±czenie
+%description -l pl.UTF-8
+Adonthell jest ciÄ…gle rozwijanÄ… grÄ… RPG ktÃ³rej celem jest poÅ‚Ä…czenie
 najlepszych cech takich serii jak Final Fantasy i Ultima. Akcja gry
-toczy siê w szczegó³owym, wirtualnym ¶wiecie. Razem z obecnym engine
-gry jest dostêpna ma³a plansza (Waste's Edge).
+toczy siÄ™ w szczegÃ³Å‚owym, wirtualnym Å›wiecie. Razem z obecnym engine
+gry jest dostÄ™pna maÅ‚a plansza (Waste's Edge).
 
 %prep
 %setup -q
