@@ -1,5 +1,5 @@
 Summary:	A 2D graphical RPG game
-Summary(pl.UTF-8):   Darmowa gra RPG z graficznym interfejsem
+Summary(pl.UTF-8):	Darmowa gra RPG z graficznym interfejsem
 Name:		adonthell
 Version:	0.3.3
 Release:	6
