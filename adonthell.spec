@@ -13,7 +13,7 @@ URL:		http://adonthell.linuxgames.com/
 BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+-devel
 BuildRequires:	intltool
 BuildRequires:	libtool
